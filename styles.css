@@ -18,8 +18,10 @@ h1 {
     margin:0px;
     color:#FF7600;
     position: fixed;
-    z-index: 1;
+    z-index: -1;
     top: 0px;
+    margin-left:320px;
+
 }
 
 h2 { font-size: 18pt;
@@ -42,7 +44,7 @@ p { line-height: 15pt;
   background-color: black;
   overflow-x: hidden;
   border-right-style: solid;
-  border-right-width: 1px;
+  border-right-width: 3px;
   border-right-color: white;
 }
 
@@ -69,58 +71,67 @@ p { line-height: 15pt;
 }
 
 
-
-.img_1b {
-  background-image: url(images/1b.png);
-  width: 460px;
-  height: 300px;
-  background-color: #FABF02;
-  background-blend-mode: multiply;
+#img_1b {
   top:160px;
-  left: 350px;
-
+  left:800px;
 }
 
-.img_1c {
-  background-image: url(images/1c.png);
-  width: 350px;
-  height: 460px;
-  background-color: #02876A;
-  background-blend-mode: multiply;
+
+#img_1c {
   top:460px;
   left: 560px;
 
-
 }
 
-.img_1d {
-  background-image: url(images/1d.png);
-  width: 300px;
-  height: 400px;
-  background-color: #0063C6;
-  background-blend-mode: multiply;
-  top: 200px;
+#img_1d {
+  top: 400px;
   left: 956px;
-
-
 }
+
+.interview {
+    display: block;
+    position: fixed;
+    border-style: solid;
+    border-width: 3px;
+    border-color: white;
+    top: 300px;
+    left:400px;
+}
+
+.handle {
+    background:black;
+    border-bottom-style: solid;
+    border-bottom-width: 3px;
+    border-bottom-color: white;
+    height:40px;
+    width: 100%;
+    color: white;
+    font-size:20pt;
+    padding-left: 5pt;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
 
 .drawing {
-  background-size:cover;
   display: block;
   position: fixed;
   -webkit-transition: -webkit-transform 60s linear;
   -ms-transition: -ms-transform 60s linear;
   transition: transform 60s linear;
+}
 
+.drawing img {
+    width:400px;
+    height:auto;
 }
 
 .drawing:hover{
-    background-color: white;
-    background-blend-mode: multiply;
     transform:rotate(360deg);
     -ms-transform:rotate(360deg);
     -webkit-transform:rotate(360deg);
+    filter:grayscale(100%) brightness(100);
 }
 
 .intro {
@@ -130,13 +141,13 @@ p { line-height: 15pt;
 
 .intro_text {
     width: 400px;
-    height: 300px;
+    height: 400px;
     border-style: solid;
-    border-width: 1px;
+    border-width: 3px;
     border-color: white;
     z-index: 2;
-    top:300px;
-    left:400px;
+    top:140px;
+    left:10px;
     overflow:scroll;
     padding: 20px;
     background-color: black;

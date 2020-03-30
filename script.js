@@ -1,5 +1,6 @@
 
 // var screen = $(window)
+console.log("playing");
 
 if (window.outerWidth > 768) {
   $(".draggable").draggable();

@@ -3,62 +3,110 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Jeepers Peepers</title>
   <meta name="description" content="A Youth Education Project">
   <meta name="author" content="CUP">
   <link rel="stylesheet" href="styles.css">
 </head>
 
-<body>
-    <div class="sidenav">
-        <a href="index.html">Introduction</a>
-        <a href="page2.html">What’s Facial Recognition Technology?</a>
-        <a href="page3.html">What are the Pros & Cons of Facial Recognition Technology?</a>
-        <a href="#">How does the NYPD use Facial Recognition Technology?</a>
-        <a href="#">Who Uses Facial Recognition Technology?</a>
-        <a href="#">Who Decides? </a>
-        <a href="#">Public Safety vs. Right To Privacy?</a>
-        <a href="#">How could things be different?</a>
-        <a href="#">What do students say? </a>
+<body id="page1">
+
+    <div class="top" >
+        <h1>Jeepers Peepers!</h1>
+
+            <div class="sidenav">
+                <li id="link_1">
+                    <a href="index.html"> 1 </a>
+                    <span> Introduction </span>
+                 </li>
+
+                <li id="link_2">
+                    <a href="page2.html"> 2 </a>
+                    <span> What’s Facial Recognition Technology? </span>
+                </li>
+
+                <li id="link_3">
+                    <a href="page3.html"> 3 </a>
+                    <span> What are the Pros & Cons of Facial Recognition Technology? </span>
+                </li>
+
+                <li id="link_4">
+                    <a href="page4.html"> 4 </a>
+                    <span> How does the NYPD use Facial Recognition Technology?</span>
+                </li>
+
+                <li id="link_5">
+                    <a href="page5.html"> 5 </a>
+                    <span> Who Uses Facial Recognition Technology?</span>
+                </li>
+
+                <li id="link_6">
+                    <a href="page6.html"> 6 </a>
+                    <span> Who Decides? </span>
+                </li>
+
+                <li id="link_7">
+                    <a href="page7.html"> 7 </a>
+                    <span> Public Safety vs. Right To Privacy? </span>
+                </li>
+                <li id="link_8" >
+                    <a href="page8.html"> 8 </a>
+                    <span> How could things be different? </span>
+                </li>
+
+                <li id="link_9">
+                    <a  href="page9.html"> 9 </a>
+                    <span> What do students say?</span>
+                </li>
+
+                <li id="link_10">
+                    <a  href="page10.html">+</a>
+                </li>
+            </div>
+
     </div>
 
 
-        <h1>Jeepers Peepers!</h1>
 
-        <div class="content">
+    <div class="content">
 
+          <div class="textbox draggable_origin">
+              <h2> What is facial recognition technology? How does the use of facial recognition technology by the police impact New Yorkers? How do we balance public safety and privacy? </h2>
 
-          <div class="intro">
-              <div class="intro_text draggable">
-                  <h2> What is facial recognition technology? How does the use of facial recognition technology by the police impact New Yorkers? How do we balance public safety and privacy? </h2>
+              <p> During the 2018-2019 school year, CUP collaborated with Teaching Artist Hugo Rojas and public high school students from the Bronx School for Law, Government, and Justice to explore the complicated world of facial recognition technology and its impact on local communities. To investigate, students got out of the classroom to survey members of their community, interview key stakeholders working on the issue, and create art exploring the.
+                  <br><br>
+              The group teamed up with Designer Stephanie Winarto to create this website to teach others what they learned about facial recognition technology and how it impacts New Yorkers, present and future.</p>
+          </div>
 
-                  <p> During the 2018-2019 school year, CUP collaborated with Teaching Artist Hugo Rojas and public high school students from the Bronx School for Law, Government, and Justice to explore the complicated world of facial recognition technology and its impact on local communities. To investigate, students got out of the classroom to survey members of their community, interview key stakeholders working on the issue, and create art exploring the.
-                      <br><br>
-                  The group teamed up with Designer Stephanie Winarto to create this website to teach others what they learned about facial recognition technology and how it impacts New Yorkers, present and future.</p>
-              </div>
+          <div id="item_1a" class="drawing draggable">
+              <img src="images/1a.png">
+              <audio id="item_1a_audio">
+                <source  src="audio/1A_emmanuel.m4a"></source>
+              </audio>
+          </div>
 
-              <div id="img_1b" class="drawing draggable">
-                  <img src="images/1b.png">
-                  <audio id="1b_audio">
-                    <source  src="audio/1B_albert.m4a"></source>
-                  </audio>
-              </div>
-              <div id="img_1c" class="drawing draggable">
-                  <img src="images/1c.png">
-                  <audio id="1c_audio">
-                    <source  src="audio/1C_jonathan.m4a"></source>
-                  </audio>
-              </div>
-              <div id="img_1d" class="drawing draggable">
-                   <img src="images/1d.png">
-                  <audio id="1d_audio">
-                    <source  src="audio/1D_vanessa.m4a"></source>
-                  </audio>
-              </div>
-            </div>
+          <div id="item_1b" class="drawing draggable">
+              <img src="images/1b.png">
+              <audio id="item_1b_audio">
+                <source  src="audio/1B_albert.m4a"></source>
+              </audio>
+          </div>
+          <div id="item_1c" class="drawing draggable">
+              <img src="images/1c.png">
+              <audio id="item_1c_audio">
+                <source  src="audio/1C_jonathan.m4a"></source>
+              </audio>
+          </div>
+          <div id="item_1d" class="drawing draggable">
+               <img src="images/1d.png">
+              <audio id="item_1d_audio">
+                <source  src="audio/1D_vanessa.m4a"></source>
+              </audio>
+          </div>
         </div>
-        </div>
 
+    </div>
 
 <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
 <script

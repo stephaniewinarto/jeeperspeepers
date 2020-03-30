@@ -38,6 +38,7 @@ $( ".draggable" ).click( function() {
 
   $(".item_1b")
   .mouseenter(function() {
+     console.log("playing");
     player_1b.play();
   })
   .mouseleave(function() {

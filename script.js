@@ -4,7 +4,7 @@ console.log("playing");
 
 if (window.outerWidth > 768) {
   $(".draggable").draggable();
-  console.log("not mobile");
+  console.log("not new");
 
   $('.draggable').each(function(){
        $(this).css({"left": Math.random() * (window.outerWidth-400) , "top": Math.random() * (window.outerHeight-400)})

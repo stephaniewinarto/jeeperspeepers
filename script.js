@@ -1,10 +1,7 @@
 
-// var screen = $(window)
-console.log("playing");
-
 if (window.outerWidth > 768) {
   $(".draggable").draggable();
-  console.log("not new");
+  console.log("not mobiel");
 
   $('.draggable').each(function(){
        $(this).css({"left": Math.random() * (window.outerWidth-400) , "top": Math.random() * (window.outerHeight-400)})
@@ -29,7 +26,6 @@ $( ".draggable" ).click( function() {
   $( ".draggable" ).not(this).css('z-index', '0');
 
 }
-
 );
 
   var player_1a = document.getElementById("item_1a_audio");
@@ -38,27 +34,27 @@ $( ".draggable" ).click( function() {
   var player_1d = document.getElementById("item_1d_audio");
 
 
-  $(".item_1a").mouseenter(function() {
+  $("#item_1a").mouseenter(function() {
      console.log("playing");
     player_1a.play();
   }).mouseleave(function() {
     player_1a.pause();
   });
 
-  $(".item_1b").mouseenter(function() {
+  $("#item_1b").mouseenter(function() {
      console.log("playing");
     player_1b.play();
   }).mouseleave(function() {
     player_1b.pause();
   });
 
-  $(".item_1c").mouseenter(function() {
+  $("#item_1c").mouseenter(function() {
     player_1c.play();
   }).mouseleave(function() {
     player_1c.pause();
   });
 
-  $(".item_1d").mouseenter(function() {
+  $("#item_1d").mouseenter(function() {
     player_1d.play();
   }).mouseleave(function() {
     player_1d.pause();

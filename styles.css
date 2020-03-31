@@ -4,13 +4,13 @@
 
 }
 
-.top { display: grid;
+/* .top { display: block;
        width: 100%;
        height: 100%;
        padding: 5px;
        z-index: -1;
        grid-template-columns: auto;
-}
+} */
 
 
 body {font-family:  Helvetica, sans-serif;
@@ -20,9 +20,20 @@ body {font-family:  Helvetica, sans-serif;
       overflow: hidden;
       width: 100%;
       height: 100%;
+      position: fixed;
       margin:0px;
-      padding: 5px;
+      /* padding: 5px; */
 }
+
+.site-title {   display: block;
+                height: auto;
+                width: 80vw;
+                position: fixed;
+                top:5px;
+                right:5px;
+}
+
+
 
 /* Type stuff*/
 h1 {font-size: 72pt;
@@ -32,8 +43,9 @@ h1 {font-size: 72pt;
     margin:0px;
     color:#FF7600;
     z-index: -1;
-    margin-left:5px;
     text-align: right;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
 }
 
 h2 { font-size: 21pt;
@@ -51,16 +63,18 @@ p {  font-size: 12pt;
 /* //Sidebar */
 
 .sidenav {
-    display:grid;
-    width: 18vw;
-    height: auto;
+    display: grid;
+    width: 20vw;
+    height: 100vh;
     text-decoration: none;
     grid-template-rows: repeat(10, 1fr);
     color: grey;
     background: none;
     position: absolute;
-    /* top:10px; */
+    top:5px;
     visibility: visible;
+    overflow: scroll;
+    /* padding: 5px; */
 }
 
 .sidenav li { display: grid;
@@ -98,6 +112,12 @@ a:-webkit-any-link {
     line-height: 16pt;
     font-weight: lighter;
 }
+/*
+.page-title { text-align: right;
+              position: fixed;
+              right: 5px;
+              top:5px;
+} */
 
 #link_10 a { line-height:30pt;
 
@@ -116,15 +136,15 @@ a:-webkit-any-link {
 #link_10:hover {color: white;}
 
 /* Active Pages */
-#page1 .top #link_1 {color: #FF7600;}
-#page2 .top #link_2 {color: #816BC9;}
-#page3 .top #link_3 {color: #0063C6;}
-#page4 .top #link_4 {color: #FABF02;}
-#page5 .top #link_5 {color: #02876A;}
-#page6 .top #link_6 {color: #E51A28;}
-#page7 .top #link_7 {color: #FF7600;}
-#page8 .top #link_8 {color: #816BC9;}
-#page9 .top #link_9 {color: #0063C6;}
+#page1 .sidenav #link_1 {color: #FF7600;}
+#page2 .sidenav #link_2 {color: #816BC9;}
+#page3 .sidenav #link_3 {color: #0063C6;}
+#page4 .sidenav #link_4 {color: #FABF02;}
+#page5 .sidenav #link_5 {color: #02876A;}
+#page6 .sidenav #link_6 {color: #E51A28;}
+#page7 .sidenav #link_7 {color: #FF7600;}
+#page8 .sidenav #link_8 {color: #816BC9;}
+#page9 .sidenav #link_9 {color: #0063C6;}
 
 
 /* Style the content */

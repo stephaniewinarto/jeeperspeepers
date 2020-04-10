@@ -39,6 +39,7 @@ body {font-family:  Helvetica, sans-serif;
        flex-direction: column;
        align-items:  flex-start;
        overflow: scroll;
+       padding: 5px;
 }
 
 .site-buttons  { position: absolute;
@@ -71,22 +72,18 @@ body {font-family:  Helvetica, sans-serif;
     border: 3px solid white;
     width: 98%;
     height: auto;
-    margin-right: 10px;
-    margin-left: 10px;
-    margin-bottom: 5px;
-    margin-top: 5px;
+    margin:5px;
     display: flex;
     justify-content:  flex-start;
     font-size: 24pt;
     letter-spacing: -1pt;
-    /* padding: 15px; */
+    cursor: grab;
 }
 
 .page-links div {
     margin: 10px;
     padding-left: 20px;
 }
-
 
 /* Type stuff*/
 h1 {font-size: 60pt;
@@ -151,16 +148,16 @@ p {  font-size: 12pt;
 #link_10:hover {color: white;}
 
 /* Active Pages */
-#page1 .sidenav #link_1 {color: #FF7600;}
-#page2 .sidenav #link_2 {color: #816BC9;}
-#page3 .sidenav #link_3 {color: #0063C6;}
-#page4 .sidenav #link_4 {color: #FABF02;}
-#page5 .sidenav #link_5 {color: #02876A;}
-#page6 .sidenav #link_6 {color: #E51A28;}
-#page7 .sidenav #link_7 {color: #FF7600;}
-#page8 .sidenav #link_8 {color: #816BC9;}
-#page9 .sidenav #link_9 {color: #0063C6;}
-
+#link_1:hover {color: #FF7600; border-color: #FF7600;}
+#link_2:hover {color: #816BC9; border-color: #816BC9;}
+#link_3:hover {color: #0063C6; border-color: #0063C6;}
+#link_4:hover {color: #FABF02; border-color: #FABF02;}
+#link_5:hover {color: #02876A; border-color: #02876A;}
+#link_6:hover {color: #E51A28; border-color: #E51A28;}
+#link_7:hover {color: #FF7600; border-color: #FF7600;}
+#link_8:hover {color: #816BC9; border-color: #816BC9;}
+#link_9:hover {color: #0063C6; border-color: #0063C6;}
+#link_10:hover {color: #FABF02; border-color: #FABF02;}
 
 /* Style the content */
 .content {
@@ -238,16 +235,15 @@ p {  font-size: 12pt;
 }
 
 .pop-up .pop-up-box {
-    width: 80%;
+    width: 800px;
     height: 80%;
     border: 3px solid white;
     border-radius: 30px;
     background-color: #FABF02;
     padding:40px;
+    align-items:  flex-start;
+    justify-content: space-around;
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
 }
 
 .pop-up-box .pop-up-header {
@@ -262,14 +258,10 @@ p {  font-size: 12pt;
 
 .pop-up-box .pop-up-header span {
     width:100%;
-    font-size: 3.7vw;
+    font-size: 30pt;
     font-weight: lighter;
-    letter-spacing: -0.2vw;
+    letter-spacing: -1.5pt;
 }
-/*
-.close-button {
-  height: 100%;
-} */
 
 
 svg {
@@ -287,7 +279,7 @@ svg:hover {
 
 .pop-up-box .pop-up-content {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 700px;
     grid-template-rows: 10% 75% 25%;
     height: 85%;
     grid-gap: 20px;

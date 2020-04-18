@@ -41,7 +41,7 @@ $( ".content" ).scroll(function() {
     var scrollpos = $( ".content" ).scrollLeft();
     console.log(scrollpos);
 
-    if (scrollpos > 240) {
+    if (scrollpos > 150) {
          $( ".scroll-instruct" ).css( "display", "none" ).fadeOut();
     } else {
         $( ".scroll-instruct" ).css( "display", "flex").fadeIn();

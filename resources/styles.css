@@ -630,7 +630,7 @@ iframe {
     border: 3px solid;
     border-radius: 50px;
     background: black;
-    padding: 25px;
+    padding: 30px;
     align-items: center;
     justify-content: space-around;
     overflow: hidden;
@@ -730,6 +730,6 @@ iframe {
 }
 
 iframe {
-    width: 337px;
-    height: 185px;
+    width: 100%;
+    height: auto;
 }

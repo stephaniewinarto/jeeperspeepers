@@ -615,7 +615,7 @@ iframe {
     width: 100vw;
     height: 100vh;
     display: none;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-around;
     position: fixed;
     top: 0px;
@@ -626,7 +626,7 @@ iframe {
 
 .pop-up .pop-up-box {
     width: 95vw;
-    height: 80vh;
+    height: 90vh;
     border: 3px solid;
     border-radius: 50px;
     background: black;
@@ -638,7 +638,7 @@ iframe {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 7fr;
     grid-row-gap: 30px;
-    margin: 0px;
+    margin: 10px;
 }
 
 .pop-up-box .pop-up-header {

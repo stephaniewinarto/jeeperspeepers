@@ -136,15 +136,30 @@ p {  font-size: 12pt;
     color: #C0C0C0;
 }
 
-.page-links div {
+.nav a:-webkit-any-link {   color: inherit;
+cursor: pointer;
+text-decoration:  none;
+width: 100%;
 
 }
 
+.nav a:-webkit-any-link:hover {   color: inherit;
+cursor: pointer;
+text-decoration:none;
+width: 100%;
+
+}
 
 a:-webkit-any-link {
     color: inherit;
     cursor: pointer;
-    text-decoration: none;
+    text-decoration: underline;
+    width: 100%;
+}
+a:-webkit-any-link:hover {
+    color: #C0C0C0;
+    cursor: pointer;
+    text-decoration: underline;
     width: 100%;
 }
 
@@ -285,6 +300,7 @@ a:-webkit-any-link {
     border-radius: 60px;
     overflow: scroll;
     padding: 40px;
+    cursor: auto;
 
 }
 
@@ -418,6 +434,11 @@ a:-webkit-any-link {
     grid-row:3 / 4;
     font-size: 10pt;
     height: 100%;
+}
+
+.pop-up-info div:first-child {
+    overflow: scroll;
+    padding-right: 20px;
 }
 
 .pop-up-info div:nth-child(3) {

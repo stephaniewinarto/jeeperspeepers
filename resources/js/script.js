@@ -1,4 +1,10 @@
-// $( ".pop-up").hide();
+
+function pauseAudio() {
+  var sounds = document.getElementsByTagName('audio');
+  for(i=0; i<sounds.length; i++) sounds[i].pause();
+};
+
+
 
 
 $( ".box-overlay" ).click(function() {
@@ -12,11 +18,12 @@ $( ".intro-box" ).click(function() {
 });
 
 
-
 $( ".close-button" ).click(function() {
     console.log("clicked close button");
   $(".pop-up" ).css("display", "none");
-  // $('iframe').attr('src', $('iframe').attr('src'));
+  pauseAudio();
+  $('iframe').attr('src', $('iframe').attr('src'));
+
 });
 
 $( ".menu-button" ).click(function() {

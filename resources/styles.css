@@ -347,10 +347,10 @@ animation: float 2s ease-in-out infinite;
 }
 
 .subtitle-box {
-        font-size: 60pt;
+        font-size: 50pt;
         font-weight: lighter;
         letter-spacing: -3.5pt;
-        line-height: 60pt;
+        line-height: 50pt;
         margin: 0px;
         color: #0063C6 ;
         text-align: center;

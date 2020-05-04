@@ -677,11 +677,29 @@ iframe {
         padding-top:0px;
         grid-row: 2/3;
         grid-column: 1/3;
+        align-items: flex-start;
+        overflow: scroll;
+        height: 100vh;
+        padding-bottom: 20vh;
+
         /* height: auto; */
     }
+/*
+    display: flex;
+overflow: scroll;
+width: 100%;
+height: 100vh;
+align-items: center;
+flex-wrap: wrap;
+padding-top: 12vh;
+padding-bottom: 12vh;
+justify-content: center;
+grid-column: 2/3;
+grid-row: 1/2;
+} */
 
     .content .box:last-child {
-        margin-bottom: 200px;
+        /* margin-bottom: 200px; */
     }
 
     .image-box img {
@@ -825,7 +843,7 @@ p{  font-size: 14pt;
     grid-column: 1 /2;
     grid-row: 2 / 3;
     width: 100%;
-    height: 50vh;
+    height: auto;
 }
 
 svg {
@@ -950,6 +968,10 @@ h1 {
 #end-credit {
     width: 95vw;
     height: auto;
+    border: none;
+    padding: 5px;
+    border-radius: 0pt;
+    padding-bottom: 100px;
 }
 
 

@@ -906,7 +906,7 @@ h1 {
 
 .scroll-instruct {
     display: block;
-    position: absolute;
+    position: fixed;
     bottom: 0px;
     right: 10px;
     z-index: 800;

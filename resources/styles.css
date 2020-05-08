@@ -334,6 +334,10 @@ animation: float 2s ease-in-out infinite;
     grid-row: 1/2;
 
 }
+
+.whomadethis {
+    align-items: flex-start; 
+}
 /*
 .content .text-box:last-child {
     padding-right: 100px;

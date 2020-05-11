@@ -134,34 +134,39 @@ $( ".intro-box" ).click(function() {
 });
 
 
-$( ".menu-button" ).click(function() {
+$( "#menu" ).click(function() {
     console.log("clicked object");
-    $(".nav-wrapper").css("display", "block");
-    $(this).css("display", "none");
-    $(".site-title").css("display", "none");
-    $(".exit-button").css("display", "block");
+    $(".nav-wrapper").toggleClass("show");
+    $(".site-title").toggleClass("hide");
+
+    $(this).toggleClass("open");
 });
 
-$( ".exit-button").click(function() {
-    console.log("clicked object");
-    $(".nav-wrapper").css("display", "none");
-    $(this).css("display", "none");
-    $(".site-title").css("display", "block");
-    $(".menu-button").css("display", "block");
-});
 
 
 $( ".content" ).scroll(function() {
     var scrollpos = $( ".content" ).scrollTop();
     // console.log(scrollpos);
 
-    if (scrollpos > 150) {
+    if (scrollpos > 2000) {
          $( ".scroll-instruct" ).css( "display", "none" ).fadeOut();
     } else {
         $( ".scroll-instruct" ).css( "display", "flex").fadeIn();
     }
 
 });
+
+
+jQuery(function($){
+    $('.content').bind('scroll', function(){
+        if($(this).scrollTop() + $(this).innerHeight()>=$(this)[0].scrollHeight)
+        {
+          $( ".scroll-instruct" ).css( "display", "none" ).fadeOut();
+        }
+      })
+  }
+);
+
 
 $( ".transcript-click" ).click(function() {
     $(this).next().slideToggle();

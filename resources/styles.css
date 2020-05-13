@@ -53,6 +53,12 @@ p {  margin:0px;
     line-height: 15pt;
 }
 
+
+hr { margin-bottom: 60px;
+    border-style: inset;
+    border-width: 0px;
+
+}
 /* Wrapper */
 
 .wrapper { display: grid;

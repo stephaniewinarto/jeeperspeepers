@@ -598,7 +598,7 @@ animation: float 2s ease-in-out infinite;
 }
 
 .pop-up-audio {
-    /* display: flex; */
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -813,12 +813,12 @@ iframe {
 }
 
     h2 {
-    font-size: 28pt;
+    font-size:21pt;
     font-weight: lighter;
     margin: 0px;
-    letter-spacing: -1pt;
+    letter-spacing: -0.5pt;
     text-align: left;
-    line-height: 28pt;
+    line-height: 21pt;
     margin-bottom: 10px;
     }
 
@@ -1021,10 +1021,10 @@ p{  font-size: 14pt;
 
 
 h1 {
-    font-size: 24pt;
+    font-size: 28pt;
     font-weight: lighter;
     letter-spacing: -1pt;
-    line-height: 24pt;
+    line-height: 28pt;
     margin: 0px;
     color: inherit;
     z-index: -1;

@@ -288,48 +288,6 @@ animation: float 2s ease-in-out infinite;
 }
 
 
-/* Navigation Toggle Buttons */
-/*
-.site-buttons  {
-                display: none;
-                position: absolute;
-                bottom: 10px;
-                left:10px;
-                grid-column: 1/2;
-                grid-row: 1/2;
-}
-
-.menu-button { width: 100px;
-               z-index: 999;
-               display: block;
-}
-
-.site-buttons div svg {width: 100px;
-                       border: none;
-}
-
-.site-buttons div svg:hover {width: 100px;
-}
-
-
-.exit-button { width: 100px;
-               z-index: 999;
-               display: none;
-} */
-
-
-/* Active Pages */
-/* #link_1:hover {color: #FF7600; border-color: #FF7600;}
-#link_2:hover {color: #816BC9; border-color: #816BC9;}
-#link_3:hover {color: #0063C6; border-color: #0063C6;}
-#link_4:hover {color: #FABF02; border-color: #FABF02;}
-#link_5:hover {color: #02876A; border-color: #02876A;}
-#link_6:hover {color: #0063C6; border-color: #0063C6;}
-#link_7:hover {color: #FF7600; border-color: #FF7600;}
-#link_8:hover {color: #816BC9; border-color: #816BC9;}
-#link_9:hover {color: #0063C6; border-color: #0063C6;}
-#link_10:hover {color: #FABF02; border-color:#FABF02;} */
-
 
 /* Content block*/
 .content {
@@ -350,14 +308,7 @@ animation: float 2s ease-in-out infinite;
 .whomadethis {
     align-items: flex-start;
 }
-/*
-.content .text-box:last-child {
-    padding-right: 100px;
-}
 
-.content .box:last-child {
-    padding-right: 100px;
-} */
 
 #intro-content {
     height: auto;
@@ -367,10 +318,6 @@ animation: float 2s ease-in-out infinite;
     justify-content: center;
     flex-wrap: wrap;
 }
-
-/* #intro-content-image {
-    height: 100%;
-} */
 
 /* Image box */
 .image-box {
@@ -602,7 +549,6 @@ animation: float 2s ease-in-out infinite;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    /* height: 48vh; */
     width: 100%;
     grid-column: 1 /2;
     grid-row: 1 / 2;
@@ -611,7 +557,6 @@ animation: float 2s ease-in-out infinite;
 .pop-up-audio img {
     max-width: 100%;
     max-height: 30vh;
-    /* padding-top: 10%; */
     margin-bottom: 10px;
 }
 
@@ -630,7 +575,6 @@ animation: float 2s ease-in-out infinite;
 }
 
 .interview-name {
-    /* overflow: scroll; */
     padding-right: 20px;
     margin-bottom: 20px;
 }
@@ -642,11 +586,8 @@ animation: float 2s ease-in-out infinite;
 
 
 .transcript {
-    /* width: 100%; */
     height: auto;
     overflow-y: hidden;
-    /* display: grid; */
-    /* grid-template-rows: auto 1fr; */
     cursor: grab;
     padding-right: 30px;
 
@@ -766,7 +707,7 @@ iframe {
     }
 
     .content .box:last-child {
-        margin-bottom: 20vh;
+        margin-bottom: 30vh;
     }
 
     .image-box img {

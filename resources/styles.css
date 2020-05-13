@@ -1034,7 +1034,7 @@ h1 {
     padding: 0px;
     border-radius: 0pt;
     padding-bottom: 20vh;
-    padding-right:5vw;
+    /* padding-right:5vw; */
     overflow-y: scroll;
 }
 

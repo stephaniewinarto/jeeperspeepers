@@ -678,7 +678,7 @@ animation: float 2s ease-in-out infinite;
   color: inherit;
   display: block;
   border-radius: 100pt;
-  width: 40px;
+  height: 35px;
   stroke-width: 3;
   stroke: currentColor;
 }
@@ -813,12 +813,12 @@ iframe {
 }
 
     h2 {
-    font-size: 24pt;
+    font-size: 28pt;
     font-weight: lighter;
     margin: 0px;
     letter-spacing: -1pt;
     text-align: left;
-    line-height: 24pt;
+    line-height: 28pt;
     margin-bottom: 10px;
     }
 
@@ -912,13 +912,13 @@ p{  font-size: 14pt;
     align-self: flex-start;
     padding-right: 30px;
 
-    font-size: 24pt;
+    font-size: 28pt;
     font-weight: lighter;
     margin: 0px;
     letter-spacing: -1pt;
     text-align: left;
-    line-height: 24pt;
-    margin-bottom: 10px;
+    line-height: 28pt;
+    /* margin-bottom: 10px; */
 
 }
 
@@ -1094,10 +1094,10 @@ h1 {
 /* Icon 1 */
 
 #menu {
-  width: 32px;
-  height: 20px;
+  width: 30px;
+  height: 30px;
   position: absolute;
-  top: 13px;
+  top: 15px;
   right: 10px;
   margin: none;
   z-index: 999;
@@ -1140,11 +1140,11 @@ h1 {
 }
 
 #menu span:nth-child(2), #menu span:nth-child(3) {
-  top: 11px;
+  top: 10px;
 }
 
 #menu span:nth-child(4) {
-  top: 22px;
+  top: 20px;
 }
 
 
@@ -1173,7 +1173,6 @@ h1 {
   width: 0%;
   left: 50%;
 }
-
 
 .scroll-down {
     display: none;

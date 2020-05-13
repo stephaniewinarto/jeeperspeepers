@@ -52,12 +52,7 @@ h2 { font-size: 21pt;
 p {  margin:0px;
     line-height: 15pt;
 }
-hr { margin-top: 30px;
-    margin-bottom: 30px;
 
-    border: 1px solid black;
-
-}
 /* Wrapper */
 
 .wrapper { display: grid;
@@ -80,13 +75,15 @@ hr { margin-top: 30px;
 
 /* Header */
 .site-title {
-
+    height: fit-content;
     width: 100%;
-    z-index: -999;
+    z-index: 999;
     color: inherit;
-    grid-column:2/3;
+    grid-column: 2/3;
     grid-row: 1/2;
     padding: 10px;
+    /* text-align: center; */
+
 }
 
 .page-name:after {
@@ -95,8 +92,8 @@ hr { margin-top: 30px;
 }
 
 .site-title:hover .page-name:after {
-    content: "Face Facts!";
-    color: #C0C0C0;
+    content:"Face Facts!";
+    color:#c0c0c0;
 }
 
 
@@ -290,7 +287,7 @@ animation: float 2s ease-in-out infinite;
     height: 100vh;
     align-items: center;
     flex-wrap: wrap;
-    padding-top: 200px;
+    padding-top: 100px;
     padding-bottom: 20vh;
     justify-content: center;
     grid-column: 2/3;

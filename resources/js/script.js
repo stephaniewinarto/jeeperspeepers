@@ -181,7 +181,7 @@ $( ".nav" ).scroll(function() {
         console.log(navpos);
        $(".nav-wrapper").addClass("nav-wrapper-start");
        $(".nav-wrapper").removeClass("nav-wrapper-end");
-       $(".scroll-down").css("display", "block");}
+       $(".scroll-down").css("display", "flex");}
 
    if(navpos >= 50){
        console.log(navpos);

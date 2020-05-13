@@ -131,14 +131,30 @@ hr { margin-top: 30px;
 
 
 .scroll-down { width:  100%;
+               height: auto;
                padding: 10px;
                text-align: center;
                grid-column: 1/2;
                grid-row: 1/2;
+               font-size: 10pt;
+               display: flex;
+               flex-direction: row;
+               align-items: flex-start;
+               justify-content: space-around;
+}
+
+.scroll-down div {
+    width:  12px;
+    height: 12px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+
 }
 
 .scroll-down svg {
-    height: 25px;
+    height: 100%;
+    width: 100%;
     fill: currentColor;
 }
 
@@ -220,8 +236,6 @@ a:-webkit-any-link:hover {
 display: flex;
 align-self: flex-end;
 justify-content:center;
-font-size: 24pt;
-letter-spacing: -0.75pt;
 z-index: 999;
 grid-column: 2/3;
 grid-row: 1/2;
@@ -595,8 +609,8 @@ animation: float 2s ease-in-out infinite;
 }
 
 .pop-up-audio img {
-    width: 100%;
-    height: 50;
+    max-width: 100%;
+    max-height: 30vh;
     /* padding-top: 10%; */
     margin-bottom: 10px;
 }
@@ -752,7 +766,7 @@ iframe {
     }
 
     .content .box:last-child {
-        /* margin-bottom: 200px; */
+        margin-bottom: 20vh;
     }
 
     .image-box img {
@@ -798,13 +812,14 @@ iframe {
     cursor: grab;
 }
 
-    h2 {font-size: 21pt;
-        font-weight: lighter;
-        margin: 0px;
-        letter-spacing: -0.4pt;
-        text-align: left;
-        line-height: 21pt;
-        margin-bottom: 10px;
+    h2 {
+    font-size: 24pt;
+    font-weight: lighter;
+    margin: 0px;
+    letter-spacing: -1pt;
+    text-align: left;
+    line-height: 24pt;
+    margin-bottom: 10px;
     }
 
     .text-box {
@@ -880,6 +895,7 @@ p{  font-size: 14pt;
     grid-template-columns: 1fr;
     grid-template-rows: auto 1fr;
     grid-row-gap: 30px;
+    padding-bottom: 20vh;
 }
 
 .pop-up-header {
@@ -893,12 +909,16 @@ p{  font-size: 14pt;
 
 .pop-up-header span {
     width: 100%;
-    font-size: 30pt;
-    font-weight: lighter;
-    letter-spacing: -1.5pt;
     align-self: flex-start;
     padding-right: 30px;
-    line-height: 30pt;
+
+    font-size: 24pt;
+    font-weight: lighter;
+    margin: 0px;
+    letter-spacing: -1pt;
+    text-align: left;
+    line-height: 24pt;
+    margin-bottom: 10px;
 
 }
 
@@ -934,8 +954,10 @@ p{  font-size: 14pt;
 }
 
 .pop-up-audio img {
+    max-width: unset;
+    max-height: unset;
     width: 100%;
-    height: 50;
+    height: auto;
     /* padding-top: 10%; */
     margin-bottom: 10px;
 }
@@ -1061,9 +1083,10 @@ h1 {
     width: 95vw;
     height: auto;
     border: none;
-    padding: 5px;
+    padding: 0px;
     border-radius: 0pt;
-    padding-bottom: 100px;
+    padding-bottom: 20vh;
+    padding-right:5vw;
 }
 
 

@@ -771,15 +771,15 @@ iframe {
     }
 
     .text-box {
-    width: 95vw;
+        width: 100%;
     height: auto;
     display: grid;
-
     cursor: grab;
     margin-left: 0px;
     margin-right: 0px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 10px;
+    margin-bottom: 20vh;
+    padding: 10px;
 }
 
 .text-box-content {
@@ -793,7 +793,7 @@ iframe {
     overflow: scroll;
     padding: 30px;
     cursor: auto;
-    width:100%;
+    width: 100%;
 }
 p{  font-size: 14pt;
     line-height: 17pt;
@@ -1028,13 +1028,12 @@ h1 {
 }
 
 #end-credit {
-    width: 100vw;
+    width: 100%;
     height: auto;
     border: none;
     padding: 0px;
     border-radius: 0pt;
-    padding-bottom: 20vh;
-    /* padding-right:5vw; */
+    /* padding-bottom: 20vh; */
     overflow-y: scroll;
 }
 
@@ -1128,5 +1127,16 @@ h1 {
     visibility: hidden;
 }
 
+.logo-wrapper {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.logo {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 40px;
+}
 
 }

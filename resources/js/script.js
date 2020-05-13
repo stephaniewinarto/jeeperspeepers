@@ -144,28 +144,38 @@ $( "#menu" ).click(function() {
 
 
 
-$( ".content" ).scroll(function() {
-    var scrollpos = $( ".content" ).scrollTop();
-    // console.log(scrollpos);
-
-    if (scrollpos > 2000) {
-         $( ".scroll-instruct" ).css( "display", "none" ).fadeOut();
-    } else {
-        $( ".scroll-instruct" ).css( "display", "flex").fadeIn();
-    }
-
-});
-
 
 jQuery(function($){
+
     $('.content').bind('scroll', function(){
-        if($(this).scrollTop() + $(this).innerHeight()>=$(this)[0].scrollHeight)
-        {
+
+        if($(this).scrollTop() + $(this).innerHeight()>=$(this)[0].scrollHeight){
           $( ".scroll-instruct" ).css( "display", "none" ).fadeOut();
-        }
-      })
+      }else {
+           $( ".scroll-instruct" ).css( "display", "flex" ).fadeIn();
+      }
+    })
   }
 );
+
+function isOverflown(element) {
+  return element.scrollHeight > element.clientHeight || element.scrollWidth > element.clientWidth;
+}
+
+var els = document.getElementsByClassName('content');
+for (var i = 0; i < els.length; i++) {
+  var el = els[i];
+  var overflown = isOverflown(el);
+
+  if (overflown == false) {
+      $(".scroll-instruct").css("display","none");
+  } else {
+      $(".scroll-instruct").css("display","flex");
+  }
+}
+
+
+
 
 
 $( ".transcript-click" ).click(function() {

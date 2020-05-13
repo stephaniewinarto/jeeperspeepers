@@ -114,18 +114,10 @@ hr { margin-top: 30px;
 }
 
 .nav-wrapper-start {
-    /* width: auto;
-    height: 100vh;
-    display: flex;
-    grid-column: 1/2; */
     background-image: linear-gradient(to bottom, black 90%, currentColor 110%);
 }
 
 .nav-wrapper-end {
-    /* width: auto;
-    height: 100vh;
-    display: flex;
-    grid-column: 1/2; */
     background-image: linear-gradient(to top, black 90%, currentColor 110%);
 }
 
@@ -168,7 +160,7 @@ hr { margin-top: 30px;
     -ms-overflow-style: none;
     grid-column: 1/2;
     grid-row: 1/2;
-    padding-top: 55px;
+    padding-top: 35px;
     padding-bottom: 45px;
 
 }
@@ -240,7 +232,6 @@ z-index: 999;
 grid-column: 2/3;
 grid-row: 1/2;
 color: inherit;
-
 transform: translatey(0px);
 animation: float 2s ease-in-out infinite;
 
@@ -293,12 +284,14 @@ animation: float 2s ease-in-out infinite;
 .content {
     display: flex;
     overflow: scroll;
+    overflow-x: scroll;
+    overflow-y: scroll;
     width: 100%;
     height: 100vh;
     align-items: center;
     flex-wrap: wrap;
-    padding-top: 12vh;
-    padding-bottom: 12vh;
+    padding-top: 200px;
+    padding-bottom: 20vh;
     justify-content: center;
     grid-column: 2/3;
     grid-row: 1/2;
@@ -344,10 +337,10 @@ animation: float 2s ease-in-out infinite;
 
 /* Individual object boxes */
 .box{
-  width: auto;
-  height: auto;
-  display: grid;
-  margin: 50px;
+   width: 30vw;
+   height: 40vh;
+   display: grid;
+   margin: 30px;
 
 }
 
@@ -373,10 +366,8 @@ animation: float 2s ease-in-out infinite;
   display: flex;
   justify-content: center;
   align-items: center;
-  max-width: 400px;
+  width: 100%;
   cursor: grab;
-
-
 
 }
 
@@ -387,13 +378,14 @@ animation: float 2s ease-in-out infinite;
 }
 
 .box-overlay img {
-    max-height:350px;
-    max-width: 400px;
+    max-height: 100%;
+    max-width: 100%;
     grid-row-start: 1;
     grid-column-start: 1;
     justify-self: center;
     grid-row: 1/2;
     grid-column: 1/2;
+    align-self: center;
 
 }
 
@@ -703,11 +695,10 @@ iframe {
         overflow: scroll;
         height: 100vh;
         padding-bottom: 20vh;
-
     }
 
     .content .box:last-child {
-        margin-bottom: 30vh;
+        margin-bottom: 20vh;
     }
 
     .image-box img {
@@ -742,6 +733,7 @@ iframe {
     justify-self: center;
     grid-row: 1/2;
     grid-column: 1/2;
+
     }
 
     .box {

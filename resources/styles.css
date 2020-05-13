@@ -89,11 +89,23 @@ p {  margin:0px;
 .page-name:after {
     content: attr(data-curr);
     color:inherit;
+
 }
 
 .site-title:hover .page-name:after {
     content:"Face Facts!";
     color:#c0c0c0;
+
+}
+
+.site-title a:-webkit-any-link {
+    text-decoration: none;
+    cursor: grab;
+}
+
+.site-title a:-webkit-any-link:hover {
+    text-decoration: none;
+    cursor: grab;
 }
 
 
@@ -287,7 +299,7 @@ animation: float 2s ease-in-out infinite;
     height: 100vh;
     align-items: center;
     flex-wrap: wrap;
-    padding-top: 100px;
+    padding-top: 120px;
     padding-bottom: 20vh;
     justify-content: center;
     grid-column: 2/3;
@@ -999,9 +1011,9 @@ h1 {
     height: auto;
     display: flex;
     justify-content: center;
-    font-size: 28pt;
-    line-height: 28pt;
-    letter-spacing: -1pt;
+    font-size: 21pt;
+    line-height: 21pt;
+    letter-spacing: -0.5pt;
     cursor: grab;
     padding: 30px;
     padding-left: 25px;

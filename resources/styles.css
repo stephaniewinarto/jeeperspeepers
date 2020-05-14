@@ -99,7 +99,7 @@ hr { margin-bottom: 60px;
 }
 
 .site-title:hover .page-name:after {
-    content:"Face Facts!";
+    content:"Data Face!";
     color:#c0c0c0;
 
 }
@@ -1033,7 +1033,6 @@ h1 {
     border: none;
     padding: 0px;
     border-radius: 0pt;
-    /* padding-bottom: 20vh; */
     overflow-y: scroll;
 }
 

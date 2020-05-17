@@ -25,18 +25,13 @@ $(".box-overlay.videoitem").click(function() {
   player.play();
 
   $(".close-button").click(function() {
-      console.log("clicked close button");
+      console.log("close-button");
     $(".pop-up").css("display", "none");
     player.pause();
   });
 
-});
 
 
-
-$( ".intro-box" ).click(function() {
-    console.log("clicked object");
-  $(this).parent().find(".intro-pop-up").css("display", "flex");
 });
 
 
@@ -47,8 +42,6 @@ $( "#menu" ).click(function() {
 
     $(this).toggleClass("open");
 });
-
-
 
 
 jQuery(function($){

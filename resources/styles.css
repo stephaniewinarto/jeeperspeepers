@@ -13,20 +13,11 @@ body {font-family:  Helvetica, sans-serif;
       height: 100%;
       position: fixed;
       margin:0px;
-      /* scrollbar-width: none; */
 
-
+      scrollbar-width: thin;
+      scrollbar-color: currentColor;
 }
 
-/*
-body div::-webkit-scrollbar {
-     display: none;
-} */
-
-body div{
--ms-overflow-style: none;
-
-}
 
 
 /* Typography*/
@@ -38,7 +29,6 @@ h1 { font-size: 50pt;
     color: inherit;
     z-index: -1;
     text-align: center;
-    /* width: 100%; */
 
 
 }
@@ -64,6 +54,42 @@ hr { margin-bottom: 60px;
 
 }
 
+
+/* Scroll bar */
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: none;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: currentColor;
+  border-radius: 100pt;
+}
+
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: currentColor;
+}
+
+.pop-up ::-webkit-scrollbar-button {
+    height: 40px;
+}
+
+.content ::-webkit-scrollbar-button {
+    height: 25px;
+}
+
+
+::-webkit-scrollbar-corner {
+    background: none;
+}
 
 
 /* Wrapper */
@@ -413,7 +439,7 @@ animation: float 2s ease-in-out infinite;
 }
 
 
-#intro-content {
+.intro-content {
     height: auto;
     width: 100%;
 
@@ -507,27 +533,41 @@ animation: float 2s ease-in-out infinite;
 
 /* Styling text boxes */
 .text-box{
-  width: auto;
-  height: auto;
   display: grid;
   margin: 50px;
   cursor: grab;
 
+  background: rgba(0, 0, 0, 0.75);
+  border: 2px solid;
+  border-radius: 60px;
+  overflow: scroll;
+  padding: 40px;
+  width: 450px;
+  height: 500px;
+
+}
+
+.end-credit {
+    width: 80%;
+    height: auto;
+    border: none;
+    border-radius: 0pt;
+
+    background: rgba(0, 0, 0, 0.75);
+    border: 2px solid;
+    border-radius: 60px;
+    overflow-y: scroll;
+    padding: 40px;
 }
 
 .text-box-content {
     grid-row-start: 1;
     grid-column-start: 1;
     display: block;
-    width: 450px;
-    height: 500px;
+
     z-index: 0;
-    background: rgba(0, 0, 0, 0.75);
-    border: 2px solid;
-    border-radius: 60px;
-    overflow: scroll;
-    padding: 40px;
     cursor: auto;
+    padding-bottom: 40px;
 
 }
 
@@ -1131,14 +1171,20 @@ h1 {
     text-align: center;
 }
 
-#end-credit {
+.end-credit {
     width: 100%;
     height: auto;
     border: none;
-    padding: 0px;
     border-radius: 0pt;
+
+    background: rgba(0, 0, 0, 0.75);
+    border: none;
+    border-radius: 0px;
     overflow-y: scroll;
+    padding: 10px;
 }
+
+
 
 
 

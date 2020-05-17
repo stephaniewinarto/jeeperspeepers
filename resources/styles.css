@@ -913,32 +913,33 @@ iframe {
     margin-bottom: 10px;
     }
 
-    .text-box {
-        width: 100%;
+.text-box {
+    width: 100%;
     height: auto;
     display: grid;
     cursor: grab;
-    margin-left: 0px;
-    margin-right: 0px;
-    margin-top: 10px;
-    margin-bottom: 20vh;
+    margin: 0px;
+    padding: 20px;
+
+    background: rgba(0, 0, 0, 0.75);
+    border: 0px solid;
+    border-top: 2px solid;
+    border-bottom: 2px solid;
+    border-radius: 0px;
+    /* overflow: scroll; */
     padding: 10px;
 }
 
-.text-box-content {
+/* .text-box-content {
     grid-row-start: 1;
     grid-column-start: 1;
     display: block;
     z-index: 0;
-    background: rgba(0, 0, 0, 0.75);
-    border: 2px solid;
-    border-radius: 60px;
-    overflow: scroll;
-    padding: 30px;
     cursor: auto;
-    width: 100%;
-}
-p{  font-size: 14pt;
+
+} */
+
+p {  font-size: 14pt;
     line-height: 17pt;
 
 }

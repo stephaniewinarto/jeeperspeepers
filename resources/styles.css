@@ -126,6 +126,10 @@ hr { margin-bottom: 60px;
     align-items: center;
     justify-content: center;
 
+
+    background-image: linear-gradient(to bottom, black, transparent );
+
+
 }
 
 .page-name {  width: auto;

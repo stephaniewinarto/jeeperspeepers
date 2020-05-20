@@ -510,13 +510,11 @@ animation: float 2s ease-in-out infinite;
   cursor: grab;
   flex-wrap: wrap;
   flex-direction: column;
-
 }
 
 
 .box-overlay span img{
   margin-bottom: 10px;
-
 }
 
 
@@ -533,14 +531,10 @@ animation: float 2s ease-in-out infinite;
     grid-row: 1/2;
     grid-column: 1/2;
     align-self: center;
-
 }
-
-
 
 .box-overlay:hover img:nth-child(2) {
     opacity: 0.1;
-
 }
 
 
@@ -902,7 +896,7 @@ iframe {
     margin-bottom: 20px;
     }
 
-    .box img {
+.box img {
     max-height: 50vh;
     max-width: 90vw;
     grid-row-start: 1;
@@ -910,10 +904,20 @@ iframe {
     justify-self: center;
     grid-row: 1/2;
     grid-column: 1/2;
+}
 
-    }
+.box-overlay img:nth-child(2) {
+    max-height: 45vh;
+    max-width: 100%;
+    grid-row-start: 1;
+    grid-column-start: 1;
+    justify-self: center;
+    grid-row: 1/2;
+    grid-column: 1/2;
+    align-self: center;
+}
 
-    .box {
+.box {
     width: auto;
     height: auto;
     display: grid;
@@ -1307,9 +1311,9 @@ h1 {
 }
 
 .logo {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    height: 40px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    /* height: 40px; */
 }
 
 

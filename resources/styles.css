@@ -737,6 +737,7 @@ iframe {
         background: black;
         border-right: none;
         border-color: inherit;
+        padding-bottom: 20vh;
     }
 
 
